@@ -13,5 +13,23 @@
     <p>some_dict = {{some_dict}}</p>
     <p>some_dict.some_key = {{some_dict.some_key}}</p>
     <p>{# This is a comment #}</p>
+
+    <!--Tags: List For Loop Start-->
+    <ul>
+        {% for item in some_list %}
+            <li>{{item}}</li>
+        {% endfor %}
+    </ul>
+    <!--Tags: List For Loop End-->
+
+    <!--Tags: Dictionary For Loop Start-->
+    <ul>
+        {% for key, value in some_dict.items %}
+            <li>{{key}} > {{value}}</li>
+        {% endfor %}
+    </ul>
+    <!--Tags: Dictionary For Loop End-->
+
+    
   </body>
 </html>
