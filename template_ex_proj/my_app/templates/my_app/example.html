@@ -1,16 +1,8 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Example</title>
-</head>
-<body>
-    <h1>Example HTML</h1>
+{% extends 'base.html' %} 
 
+{% block content %}
+    <h3>INSIDE BLOCK</h3>
     <!--Tags: url start-->
     <a href="{% url 'my_app:variable_view_path' %}">GO TO VARIABLE PAGE</a>
     <!--Tags: url end-->
-    
-</body>
-</html>
+{% endblock content %}
