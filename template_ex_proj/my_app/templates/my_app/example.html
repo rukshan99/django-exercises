@@ -1,8 +1,15 @@
 {% extends 'base.html' %} 
+{% load static %}
 
 {% block content %}
     <h3>INSIDE BLOCK</h3>
+    <h1>Visca El Barca!</h1>
+
+    <img src="{% static 'my_app/boxios.jpg' %}" alt='Boxios Noise'/>
+    <br />
+    <br />
     <!--Tags: url start-->
     <a href="{% url 'my_app:variable_view_path' %}">GO TO VARIABLE PAGE</a>
     <!--Tags: url end-->
+
 {% endblock content %}
